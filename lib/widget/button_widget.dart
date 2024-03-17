@@ -7,8 +7,8 @@ class ButtonWidget extends StatelessWidget {
   const ButtonWidget({
     required this.text,
     required this.onClicked,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) => MaterialButton(
