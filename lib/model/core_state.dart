@@ -19,10 +19,9 @@ class CoreState {
       );
 
   @override
-  bool operator ==(Object other) =>
+  bool operator ==(covariant CoreState other) =>
       identical(this, other) ||
-      other is CoreState &&
-          runtimeType == other.runtimeType &&
+      runtimeType == other.runtimeType &&
           counter == other.counter &&
           backgroundColor == other.backgroundColor;
 
