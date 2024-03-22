@@ -16,6 +16,36 @@ class StateWidget extends StatefulWidget {
 class _StateWidgetState extends State<StateWidget> {
   CoreState state = const CoreState();
 
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   print('initState');
+  // }
+
+  // @override
+  // void didUpdateWidget(oldWidget) {
+  //   super.didUpdateWidget(oldWidget);
+  //   print('didUpdate');
+  // }
+
+  // @override
+  // void didChangeDependencies() {
+  //   super.didChangeDependencies();
+  //   print('didChange');
+  // }
+
+  // @override
+  // void deactivate() {
+  //   super.deactivate();
+  //   print('deactivate');
+  // }
+
+  // @override
+  // void dispose() {
+  //   super.dispose();
+  //   print('dispose');
+  // }
+
   void incrementCounter() {
     final counter = state.counter + 1;
     final newState = state.copy(counter: counter);
